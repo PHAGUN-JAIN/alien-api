@@ -1,8 +1,9 @@
 # MongoDB Basics
 
 ## tech used
--nodejs 
--expressjs 
--mongodb
 
-## aim of the project
+- nodejs 
+- expressjs 
+- mongodb
+
+## Aim of the project
