@@ -13,6 +13,15 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  try {
+    const alien = await Alien.findById(req.params.id);
+    res.json(alien);
+  } catch (error) {
+    console.log("Error" + error);
+  }
+});
+
 router.post("/", async (req, res) => {
   const alien = new Alien({
     name: req.body.name,
