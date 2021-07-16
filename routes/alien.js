@@ -13,4 +13,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.post("/", async (req, res) => {
+  const alien = new Alien({
+    name: req.body.name,
+    tech: req.body.tech,
+    sub: req.body.sub,
+  });
+  try {
+    const a = await alien.save();
+    res.json(a);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 module.exports = router;
