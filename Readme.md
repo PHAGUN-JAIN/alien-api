@@ -1,4 +1,4 @@
-# MongoDB Basics
+# CRUD operations 101
 
 ## tech used
 
